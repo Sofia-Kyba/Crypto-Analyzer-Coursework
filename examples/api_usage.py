@@ -19,7 +19,7 @@ headers = {
     'X-CMC_PRO_API_KEY': 'APPI_KEY',
 }
 
-# here we get information with API key and write int json file
+# here we get information with API key and write in json file
 
 
 def check(line):
@@ -42,7 +42,7 @@ def write_into_file():
     """
     (NoneType) -> dict
     Get information using api, write into the file and
-    print all the information..
+    return dictionary with all the information.
     """
     session = Session()
     session.headers.update(headers)
