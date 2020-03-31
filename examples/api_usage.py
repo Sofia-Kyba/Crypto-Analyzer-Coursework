@@ -19,7 +19,8 @@ headers = {
     'X-CMC_PRO_API_KEY': 'APPI_KEY',
 }
 
-# here we get information with API key and write in json file
+# here we get information with API key and write it
+# into json file
 
 
 def check(line):
