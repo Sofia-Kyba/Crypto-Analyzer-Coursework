@@ -1,1 +1,1 @@
-*** My semester UCU project. ***
+Project name.
