@@ -64,11 +64,6 @@ def testing_pandas():
     res = pandas.DataFrame.from_dict(full_dict, orient='columns')
     print(res)
 
- 
-# # TESTING PLOTLY
-# def testing_plotly():
-#     pass
-
 
 if __name__ == '__main__':
     print('TESTING PANDAS...')
