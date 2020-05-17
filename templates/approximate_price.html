@@ -10,8 +10,7 @@
 <style>
     body
     {
-        background-image: url('https://images.unsplash.com/photo-1567427018369-9216e43df052?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
-        background-size: cover;
+        background-image: url("https://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80");
     }
     .sidebar-sticky
     {
@@ -19,7 +18,7 @@
         font-size: 24px;
         background: darkslategrey;
         width: 300px;
-        height: 1300px;
+        height: 710px;
         padding-top: 25px;
         opacity: 0.9;
         filter: blur(0px);
@@ -49,7 +48,7 @@
         top: 60px;
         align-content: center;
         width: 920px;
-        height: 1300px;
+        height: 710px;
         background: mintcream;
         font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 23px;
@@ -79,68 +78,19 @@
     {
         font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
         color: darkslategrey;
-        font-size: 56px;
-        margin-top: 13px;
+        font-size: 35px;
+        margin-top: 70px;
         font-style: revert;
+        padding-bottom: 20px;
+        padding-left: 66px;
+        width: 850px;
+        align-items: center;
     }
-    .top5
+    .form_
     {
-        font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-        color: dimgray;
-    }
-    .h3
-    {
-        padding-left: 400px;
-        color: darkslategrey;
-        font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    }
-    .img
-    {
-        float: left;
-        filter: alpha(Opacity=80);
-        opacity: 0.9;
-        border-radius: 100px;
-    }
-    .info
-    {
-        margin-left: 2px;
-        width: 830px;
-        float: initial;
-        font-size: 17px;
-        font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    }
-    .info3
-    {
-        margin-left: 20px;
-        width: 830px;
-        float: initial;
-        font-size: 17px;
-        font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;;
-    }
-    .img3
-    {
-        margin-top: 20px;
-        margin-left: 53px;
-    }
-    .h31
-    {
-        color: darkslategrey;
-        padding-left: 386px;
-    }
-    .h32
-    {
-        color: darkslategrey;
-        padding-left: 350px;
-    }
-    .h33
-    {
-        color: darkslategrey;
-        padding-left: 310px;
-    }
-    .h34
-    {
-        color: darkslategrey;
-        padding-left: 425px;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 100px;
     }
 
 </style>
@@ -199,6 +149,14 @@
         </ul>
     </div>
     <div class="big-bar">
+        <div class="class">
+        <h1 class="title" align="center">Here you can receive list of crypto currencies with price close to written by user</h1>
+            <form method="post" action="/approximate_price_answer" class="form_">
+                <label><h2><font color="black" size="5">WRITE THE PRICE</font></h2></label>
+                <input type="text" name="price">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
     </div>
 
 </body>
