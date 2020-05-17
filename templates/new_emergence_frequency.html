@@ -12,8 +12,9 @@ href="https://www.bitgild.com/wp-content/uploads/2020/01/1-oz-maple-leaf-gold-co
 <style>
 body
 {
-background-image: url('https://images.unsplash.com/photo-1567427018369-9216e43df052?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
-background-size: cover;
+background-image: url('https://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80');
+background-size: initial;
+/*background: #88a690;*/
 }
 .sidebar-sticky
 {
@@ -22,7 +23,7 @@ font-size: 24px;
 background: darkslategrey;
 /*padding-left: 15px;*/
 width: 300px;
-height: 1300px;
+height: 7700px;
 padding-top: 25px;
 opacity: 0.9;
 filter: blur(0px);
@@ -52,7 +53,7 @@ padding-top: 16px;
 top: 60px;
 align-content: center;
 width: 920px;
-height: 1300px;
+height: 7700px;
 background: mintcream;
 font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
 font-size: 23px;
@@ -76,6 +77,31 @@ text-align: left;
 padding-left: 0px;
 background: #1c2f2f;
 height: 85px;
+}
+.plotly-graph-div
+{
+padding-left: 150px;
+}
+.description
+{
+color: darkred;
+font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+font-size: 22px;
+width: 820px;
+padding-left: 100px;
+}
+.table_
+{
+width: 800px;
+margin-left: 110px;
+font-size: 15px;
+/*color: whitesmoke;*/
+}
+.dataframe_table_table-striped
+{
+height: 6700px;
+width: 700px;
+color: darkred;
 }
 
 </style>
@@ -135,9 +161,11 @@ Price change
 </div>
 <div class="big-bar">
 <div>
+<h1 align="center" class="title">EMERGENCE FREQUENCY</h1>
+<h2 align="center" class="description"> Here you can see years, when most of cryptocurrencies
+appeared and track how many of them where added to system in certain year</h2>
 
-
-<div id="6e47c211-3f96-4b3d-ae33-826556bd8fcc" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+<div id="6e47c211-3f96-4b3d-ae33-826556bd8fcc" class="plotly-graph-div" style="height:600px; width:600px; align-content: center"></div>
 <script type="text/javascript">
 
 window.PLOTLYENV=window.PLOTLYENV || {};
@@ -152,6 +180,832 @@ Plotly.newPlot(
 };
 
 </script>
+</div>
+<div class="table_">
+<table border="3" class="dataframe_table_table-striped"; style="border:2px solid black">
+<thead>
+<tr style="text-align: center;">
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr align="center">
+<th><b>YEAR</b></th>
+<th><b>NAME</b></th>
+<th><b>DATE</b></th>
+</tr>
+</thead>
+<tbody>
+<tr align="center">
+<th rowspan="5" valign="top">2013</th>
+<th>Bitcoin</th>
+<th>2013-04-28</th>
+</tr>
+<tr align="center">
+<th>XRP</th>
+<th>2013-08-04</th>
+</tr>
+<tr align="center">
+<th>Litecoin</th>
+<th>2013-04-28</th>
+</tr>
+<tr align="center">
+<th>Dogecoin</th>
+<th>2013-12-15</th>
+</tr>
+<tr align="center">
+<th>Nxt</th>
+<th>2013-12-04</th>
+</tr>
+<tr align="center">
+<th rowspan="12" valign="top">2014</th>
+<th>Stellar</th>
+<th>2014-08-05</th>
+</tr>
+<tr align="center">
+<th>Monero</th>
+<th>2014-05-21</th>
+</tr>
+<tr align="center">
+<th>Dash</th>
+<th>2014-02-14</th>
+</tr>
+<tr align="center">
+<th>DigiByte</th>
+<th>2014-02-06</th>
+</tr>
+<tr align="center">
+<th>MonaCoin</th>
+<th>2014-03-20</th>
+</tr>
+<tr align="center">
+<th>ReddCoin</th>
+<th>2014-02-10</th>
+</tr>
+<tr align="center">
+<th>Verge</th>
+<th>2014-10-25</th>
+</tr>
+<tr align="center">
+<th>BitShares</th>
+<th>2014-07-21</th>
+</tr>
+<tr align="center">
+<th>Bytecoin</th>
+<th>2014-06-17</th>
+</tr>
+<tr align="center">
+<th>MaidSafeCoin</th>
+<th>2014-04-28</th>
+</tr>
+<tr align="center">
+<th>Vertcoin</th>
+<th>2014-01-20</th>
+</tr>
+<tr align="center">
+<th>Syscoin</th>
+<th>2014-08-20</th>
+</tr>
+<tr align="center">
+<th rowspan="6" valign="top">2015</th>
+<th>Ethereum</th>
+<th>2015-08-07</th>
+</tr>
+<tr align="center">
+<th>Tether</th>
+<th>2015-02-25</th>
+</tr>
+<tr align="center">
+<th>NEM</th>
+<th>2015-04-01</th>
+</tr>
+<tr align="center">
+<th>Augur</th>
+<th>2015-10-27</th>
+</tr>
+<tr align="center">
+<th>Siacoin</th>
+<th>2015-08-26</th>
+</tr>
+<tr align="center">
+<th>Factom</th>
+<th>2015-10-06</th>
+</tr>
+<tr align="center">
+<th rowspan="13" valign="top">2016</th>
+<th>Ethereum Classic</th>
+<th>2016-07-24</th>
+</tr>
+<tr align="center">
+<th>Neo</th>
+<th>2016-09-08</th>
+</tr>
+<tr align="center">
+<th>Zcash</th>
+<th>2016-10-29</th>
+</tr>
+<tr align="center">
+<th>Decred</th>
+<th>2016-02-10</th>
+</tr>
+<tr align="center">
+<th>Lisk</th>
+<th>2016-04-06</th>
+</tr>
+<tr align="center">
+<th>Waves</th>
+<th>2016-06-02</th>
+</tr>
+<tr align="center">
+<th>Steem</th>
+<th>2016-04-18</th>
+</tr>
+<tr align="center">
+<th>Golem</th>
+<th>2016-11-18</th>
+</tr>
+<tr align="center">
+<th>Zcoin</th>
+<th>2016-10-06</th>
+</tr>
+<tr align="center">
+<th>Ardor</th>
+<th>2016-07-23</th>
+</tr>
+<tr align="center">
+<th>Stratis</th>
+<th>2016-08-12</th>
+</tr>
+<tr align="center">
+<th>LBRY Credits</th>
+<th>2016-07-07</th>
+</tr>
+<tr align="center">
+<th>PIVX</th>
+<th>2016-02-13</th>
+</tr>
+<tr align="center">
+<th rowspan="63" valign="top">2017</th>
+<th>Bitcoin Cash</th>
+<th>2017-07-23</th>
+</tr>
+<tr align="center">
+<th>Binance Coin</th>
+<th>2017-07-25</th>
+</tr>
+<tr align="center">
+<th>EOS</th>
+<th>2017-07-01</th>
+</tr>
+<tr align="center">
+<th>Tezos</th>
+<th>2017-10-06</th>
+</tr>
+<tr align="center">
+<th>Chainlink</th>
+<th>2017-09-20</th>
+</tr>
+<tr align="center">
+<th>Cardano</th>
+<th>2017-10-01</th>
+</tr>
+<tr align="center">
+<th>TRON</th>
+<th>2017-09-13</th>
+</tr>
+<tr align="center">
+<th>IOTA</th>
+<th>2017-06-13</th>
+</tr>
+<tr align="center">
+<th>Maker</th>
+<th>2017-01-29</th>
+</tr>
+<tr align="center">
+<th>Basic Attention Token</th>
+<th>2017-06-01</th>
+</tr>
+<tr align="center">
+<th>0x</th>
+<th>2017-08-16</th>
+</tr>
+<tr align="center">
+<th>VeChain</th>
+<th>2017-08-22</th>
+</tr>
+<tr align="center">
+<th>Bitcoin Gold</th>
+<th>2017-10-23</th>
+</tr>
+<tr align="center">
+<th>ICON</th>
+<th>2017-10-27</th>
+</tr>
+<tr align="center">
+<th>Qtum</th>
+<th>2017-05-24</th>
+</tr>
+<tr align="center">
+<th>Enjin Coin</th>
+<th>2017-11-01</th>
+</tr>
+<tr align="center">
+<th>Kyber Network</th>
+<th>2017-09-24</th>
+</tr>
+<tr align="center">
+<th>Status</th>
+<th>2017-06-28</th>
+</tr>
+<tr align="center">
+<th>Bitcoin Diamond</th>
+<th>2017-11-24</th>
+</tr>
+<tr align="center">
+<th>OmiseGO</th>
+<th>2017-07-14</th>
+</tr>
+<tr align="center">
+<th>MCO</th>
+<th>2017-07-03</th>
+</tr>
+<tr align="center">
+<th>Nano</th>
+<th>2017-03-06</th>
+</tr>
+<tr align="center">
+<th>KuCoin Shares</th>
+<th>2017-10-24</th>
+</tr>
+<tr align="center">
+<th>Aave</th>
+<th>2017-11-30</th>
+</tr>
+<tr align="center">
+<th>Numeraire</th>
+<th>2017-06-23</th>
+</tr>
+<tr align="center">
+<th>Bytom</th>
+<th>2017-08-08</th>
+</tr>
+<tr align="center">
+<th>Komodo</th>
+<th>2017-02-05</th>
+</tr>
+<tr align="center">
+<th>Streamr</th>
+<th>2017-11-03</th>
+</tr>
+<tr align="center">
+<th>Horizen</th>
+<th>2017-06-01</th>
+</tr>
+<tr align="center">
+<th>Decentraland</th>
+<th>2017-09-17</th>
+</tr>
+<tr align="center">
+<th>HyperCash</th>
+<th>2017-08-20</th>
+</tr>
+<tr align="center">
+<th>Ripio Credit Network</th>
+<th>2017-10-26</th>
+</tr>
+<tr align="center">
+<th>Electroneum</th>
+<th>2017-11-02</th>
+</tr>
+<tr align="center">
+<th>Aragon</th>
+<th>2017-05-18</th>
+</tr>
+<tr align="center">
+<th>WAX</th>
+<th>2017-12-21</th>
+</tr>
+<tr align="center">
+<th>aelf</th>
+<th>2017-12-21</th>
+</tr>
+<tr align="center">
+<th>Loopring</th>
+<th>2017-08-30</th>
+</tr>
+<tr align="center">
+<th>Aion</th>
+<th>2017-10-18</th>
+</tr>
+<tr align="center">
+<th>Power Ledger</th>
+<th>2017-11-01</th>
+</tr>
+<tr align="center">
+<th>Aeternity</th>
+<th>2017-06-01</th>
+</tr>
+<tr align="center">
+<th>GXChain</th>
+<th>2017-06-25</th>
+</tr>
+<tr align="center">
+<th>iExec RLC</th>
+<th>2017-04-20</th>
+</tr>
+<tr align="center">
+<th>Tierion</th>
+<th>2017-08-27</th>
+</tr>
+<tr align="center">
+<th>Ark</th>
+<th>2017-03-22</th>
+</tr>
+<tr align="center">
+<th>Aidos Kuneen</th>
+<th>2017-06-06</th>
+</tr>
+<tr align="center">
+<th>Gnosis</th>
+<th>2017-05-01</th>
+</tr>
+<tr align="center">
+<th>NULS</th>
+<th>2017-10-25</th>
+</tr>
+<tr align="center">
+<th>Metal</th>
+<th>2017-07-09</th>
+</tr>
+<tr align="center">
+<th>Waltonchain</th>
+<th>2017-08-27</th>
+</tr>
+<tr align="center">
+<th>FunFair</th>
+<th>2017-06-27</th>
+</tr>
+<tr align="center">
+<th>Ignis</th>
+<th>2017-12-13</th>
+</tr>
+<tr align="center">
+<th>Dragonchain</th>
+<th>2017-12-03</th>
+</tr>
+<tr align="center">
+<th>Civic</th>
+<th>2017-07-17</th>
+</tr>
+<tr align="center">
+<th>Populous</th>
+<th>2017-07-10</th>
+</tr>
+<tr align="center">
+<th>Propy</th>
+<th>2017-09-19</th>
+</tr>
+<tr align="center">
+<th>Storj</th>
+<th>2017-07-02</th>
+</tr>
+<tr align="center">
+<th>Nebulas</th>
+<th>2017-08-23</th>
+</tr>
+<tr align="center">
+<th>Eidoo</th>
+<th>2017-10-17</th>
+</tr>
+<tr align="center">
+<th>Bancor</th>
+<th>2017-06-18</th>
+</tr>
+<tr align="center">
+<th>Enigma</th>
+<th>2017-10-13</th>
+</tr>
+<tr align="center">
+<th>Gas</th>
+<th>2017-07-06</th>
+</tr>
+<tr align="center">
+<th>Dent</th>
+<th>2017-08-12</th>
+</tr>
+<tr align="center">
+<th>Cindicator</th>
+<th>2017-10-13</th>
+</tr>
+<tr align="center">
+<th rowspan="50" valign="top">2018</th>
+<th>Bitcoin SV</th>
+<th>2018-11-09</th>
+</tr>
+<tr align="center">
+<th>Crypto.com Coin</th>
+<th>2018-12-14</th>
+</tr>
+<tr align="center">
+<th>Huobi Token</th>
+<th>2018-02-03</th>
+</tr>
+<tr align="center">
+<th>USD Coin</th>
+<th>2018-10-08</th>
+</tr>
+<tr align="center">
+<th>Ontology</th>
+<th>2018-03-08</th>
+</tr>
+<tr align="center">
+<th>Paxos Standard</th>
+<th>2018-09-27</th>
+</tr>
+<tr align="center">
+<th>THETA</th>
+<th>2018-01-17</th>
+</tr>
+<tr align="center">
+<th>Synthetix Network Token</th>
+<th>2018-03-14</th>
+</tr>
+<tr align="center">
+<th>TrueUSD</th>
+<th>2018-03-06</th>
+</tr>
+<tr align="center">
+<th>Ravencoin</th>
+<th>2018-03-10</th>
+</tr>
+<tr align="center">
+<th>ZB Token</th>
+<th>2018-09-27</th>
+</tr>
+<tr align="center">
+<th>ABBC Coin</th>
+<th>2018-10-12</th>
+</tr>
+<tr align="center">
+<th>Energi</th>
+<th>2018-08-23</th>
+</tr>
+<tr align="center">
+<th>DxChain Token</th>
+<th>2018-08-10</th>
+</tr>
+<tr align="center">
+<th>Holo</th>
+<th>2018-04-29</th>
+</tr>
+<tr align="center">
+<th>Zilliqa</th>
+<th>2018-01-25</th>
+</tr>
+<tr align="center">
+<th>Ren</th>
+<th>2018-02-21</th>
+</tr>
+<tr align="center">
+<th>Nexo</th>
+<th>2018-05-01</th>
+</tr>
+<tr align="center">
+<th>Quant</th>
+<th>2018-08-10</th>
+</tr>
+<tr align="center">
+<th>Crypterium</th>
+<th>2018-01-22</th>
+</tr>
+<tr align="center">
+<th>Seele-N</th>
+<th>2018-05-31</th>
+</tr>
+<tr align="center">
+<th>Unibright</th>
+<th>2018-05-21</th>
+</tr>
+<tr align="center">
+<th>IOST</th>
+<th>2018-01-16</th>
+</tr>
+<tr align="center">
+<th>CyberVein</th>
+<th>2018-04-17</th>
+</tr>
+<tr align="center">
+<th>STASIS EURO</th>
+<th>2018-07-30</th>
+</tr>
+<tr align="center">
+<th>Insolar</th>
+<th>2018-01-11</th>
+</tr>
+<tr align="center">
+<th>Digitex Futures</th>
+<th>2018-05-23</th>
+</tr>
+<tr align="center">
+<th>WaykiChain</th>
+<th>2018-01-09</th>
+</tr>
+<tr align="center">
+<th>Celsius</th>
+<th>2018-05-18</th>
+</tr>
+<tr align="center">
+<th>Pundi X</th>
+<th>2018-03-22</th>
+</tr>
+<tr align="center">
+<th>TomoChain</th>
+<th>2018-03-08</th>
+</tr>
+<tr align="center">
+<th>Elastos</th>
+<th>2018-01-31</th>
+</tr>
+<tr align="center">
+<th>Project Pai</th>
+<th>2018-07-05</th>
+</tr>
+<tr align="center">
+<th>TrueChain</th>
+<th>2018-01-24</th>
+</tr>
+<tr align="center">
+<th>Divi</th>
+<th>2018-10-12</th>
+</tr>
+<tr align="center">
+<th>Cortex</th>
+<th>2018-04-16</th>
+</tr>
+<tr align="center">
+<th>Loki</th>
+<th>2018-05-21</th>
+</tr>
+<tr align="center">
+<th>Wanchain</th>
+<th>2018-03-23</th>
+</tr>
+<tr align="center">
+<th>Acute Angle Cloud</th>
+<th>2018-01-20</th>
+</tr>
+<tr align="center">
+<th>SwissBorg</th>
+<th>2018-02-02</th>
+</tr>
+<tr align="center">
+<th>BHPCoin</th>
+<th>2018-08-03</th>
+</tr>
+<tr align="center">
+<th>ILCoin</th>
+<th>2018-11-26</th>
+</tr>
+<tr align="center">
+<th>ZBG Token</th>
+<th>2018-10-17</th>
+</tr>
+<tr align="center">
+<th>IoTeX</th>
+<th>2018-05-25</th>
+</tr>
+<tr align="center">
+<th>BitKan</th>
+<th>2018-07-30</th>
+</tr>
+<tr align="center">
+<th>Telcoin</th>
+<th>2018-01-14</th>
+</tr>
+<tr align="center">
+<th>Loom Network</th>
+<th>2018-03-14</th>
+</tr>
+<tr align="center">
+<th>Constellation</th>
+<th>2018-06-20</th>
+</tr>
+<tr align="center">
+<th>Molecular Future</th>
+<th>2018-01-20</th>
+</tr>
+<tr align="center">
+<th>Polymath</th>
+<th>2018-02-02</th>
+</tr>
+<tr align="center">
+<th rowspan="48" valign="top">2019</th>
+<th>UNUS SED LEO</th>
+<th>2019-05-21</th>
+</tr>
+<tr align="center">
+<th>HedgeTrade</th>
+<th>2019-01-03</th>
+</tr>
+<tr align="center">
+<th>Cosmos</th>
+<th>2019-03-14</th>
+</tr>
+<tr align="center">
+<th>OKB</th>
+<th>2019-04-30</th>
+</tr>
+<tr align="center">
+<th>FTX Token</th>
+<th>2019-07-31</th>
+</tr>
+<tr align="center">
+<th>Binance USD</th>
+<th>2019-09-20</th>
+</tr>
+<tr align="center">
+<th>Hedera Hashgraph</th>
+<th>2019-09-17</th>
+</tr>
+<tr align="center">
+<th>Algorand</th>
+<th>2019-06-20</th>
+</tr>
+<tr align="center">
+<th>Hyperion</th>
+<th>2019-01-14</th>
+</tr>
+<tr align="center">
+<th>Multi-collateral DAI</th>
+<th>2019-11-22</th>
+</tr>
+<tr align="center">
+<th>Flexacoin</th>
+<th>2019-03-22</th>
+</tr>
+<tr align="center">
+<th>Nervos Network</th>
+<th>2019-11-19</th>
+</tr>
+<tr align="center">
+<th>BitTorrent</th>
+<th>2019-01-31</th>
+</tr>
+<tr align="center">
+<th>Matic Network</th>
+<th>2019-04-28</th>
+</tr>
+<tr align="center">
+<th>Terra</th>
+<th>2019-07-26</th>
+</tr>
+<tr align="center">
+<th>BHEX Token</th>
+<th>2019-08-25</th>
+</tr>
+<tr align="center">
+<th>v.systems</th>
+<th>2019-03-05</th>
+</tr>
+<tr align="center">
+<th>Blockstack</th>
+<th>2019-10-28</th>
+</tr>
+<tr align="center">
+<th>PAX Gold</th>
+<th>2019-09-26</th>
+</tr>
+<tr align="center">
+<th>Chiliz</th>
+<th>2019-07-01</th>
+</tr>
+<tr align="center">
+<th>RSK Infrastructure Framework</th>
+<th>2019-01-16</th>
+</tr>
+<tr align="center">
+<th>SOLVE</th>
+<th>2019-02-04</th>
+</tr>
+<tr align="center">
+<th>Swipe</th>
+<th>2019-08-26</th>
+</tr>
+<tr align="center">
+<th>Gatechain Token</th>
+<th>2019-08-20</th>
+</tr>
+<tr align="center">
+<th>Thunder Token</th>
+<th>2019-05-10</th>
+</tr>
+<tr align="center">
+<th>Huobi Pool Token</th>
+<th>2019-02-01</th>
+</tr>
+<tr align="center">
+<th>MX Token</th>
+<th>2019-09-24</th>
+</tr>
+<tr align="center">
+<th>Wirex Token</th>
+<th>2019-07-09</th>
+</tr>
+<tr align="center">
+<th>Super Zero</th>
+<th>2019-07-19</th>
+</tr>
+<tr align="center">
+<th>Nash Exchange</th>
+<th>2019-04-01</th>
+</tr>
+<tr align="center">
+<th>Ocean Protocol</th>
+<th>2019-05-06</th>
+</tr>
+<tr align="center">
+<th>Band Protocol</th>
+<th>2019-09-18</th>
+</tr>
+<tr align="center">
+<th>Orbs</th>
+<th>2019-04-03</th>
+</tr>
+<tr align="center">
+<th>Reserve Rights</th>
+<th>2019-05-24</th>
+</tr>
+<tr align="center">
+<th>Grin</th>
+<th>2019-01-27</th>
+</tr>
+<tr align="center">
+<th>BORA</th>
+<th>2019-03-18</th>
+</tr>
+<tr align="center">
+<th>Beam</th>
+<th>2019-01-17</th>
+</tr>
+<tr align="center">
+<th>Kava</th>
+<th>2019-10-25</th>
+</tr>
+<tr align="center">
+<th>Elrond</th>
+<th>2019-07-04</th>
+</tr>
+<tr align="center">
+<th>Kusama</th>
+<th>2019-12-12</th>
+</tr>
+<tr align="center">
+<th>THORChain</th>
+<th>2019-07-23</th>
+</tr>
+<tr align="center">
+<th>WINk</th>
+<th>2019-08-01</th>
+</tr>
+<tr align="center">
+<th>DAD</th>
+<th>2019-10-31</th>
+</tr>
+<tr align="center">
+<th>BOSAGORA</th>
+<th>2019-08-05</th>
+</tr>
+<tr align="center">
+<th>Fetch.ai</th>
+<th>2019-03-02</th>
+</tr>
+<tr align="center">
+<th>Orchid</th>
+<th>2019-12-16</th>
+</tr>
+<tr align="center">
+<th>Harmony</th>
+<th>2019-06-01</th>
+</tr>
+<tr align="center">
+<th>Yap Stone</th>
+<th>2019-11-09</th>
+</tr>
+<tr align="center">
+<th rowspan="3" valign="top">2020</th>
+<th>Hive</th>
+<th>2020-03-26</th>
+</tr>
+<tr align="center">
+<th>Tachyon Protocol</th>
+<th>2020-01-03</th>
+</tr>
+<tr align="center">
+<th>WazirX</th>
+<th>2020-02-06</th>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
