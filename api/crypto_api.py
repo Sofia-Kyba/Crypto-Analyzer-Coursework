@@ -31,7 +31,7 @@ def get_information():
     try:
         response = session.get(url, params=parameters)
         data = json.loads(response.text)
-        with open('data/data.json', 'w') as file:
+        with open('data.json', 'w') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
         return data
     except (ConnectionError, Timeout, TooManyRedirects) as e:
