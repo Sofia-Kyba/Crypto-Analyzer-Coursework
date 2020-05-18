@@ -17,7 +17,7 @@ parameters = {
 }
 headers = {
     'Accepts': 'application/json',
-    'X-CMC_PRO_API_KEY': '611f38ee-0ec7-4c19-9e6d-81fdbd53e356',
+    'X-CMC_PRO_API_KEY': 'KEY',
 }
 
 
