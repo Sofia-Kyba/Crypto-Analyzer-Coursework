@@ -5,21 +5,21 @@ http://sofiakyba.pythonanywhere.com/
 
 ## Table of contents
 
--[Description](#Description)
+* [Description](#Description)
 
--[Input and Output data](#Input and Output data)
+* [Input and Output data](#Input)
 
--[Program structure and content](#Program structure and content)
+* [Program structure and content](#Program)
 
--[Installation](#Installation)
+* [Installation](#Installation)
 
--[Usage examples](#Usage examples)
+* [Usage examples](#Usage)
 
--[Contributing](#Contributing)
+* [Contributing](#Contributing)
 
--[Credit](#Credit)
+* [Credit](#Credit)
 
--[Licence](#Licence)
+* [Licence](#Licence)
 
 
 
