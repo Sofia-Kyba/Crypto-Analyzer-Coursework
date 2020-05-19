@@ -25,9 +25,9 @@ All information is represented by graphs, charts and tables.
 
 All the data was loaded with two kinds of API:
 
- [General information about crypto currencies](https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest)
+* [General information about crypto currencies](https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest)
  
- [Information about companies](https://min-api.cryptocompare.com/data/recommended/all)
+* [Information about companies](https://min-api.cryptocompare.com/data/recommended/all)
  
  Besides two researches provide user an opportunity to write data he needs.
  
@@ -52,6 +52,11 @@ All the data was loaded with two kinds of API:
  
  ### Example modules
  
+ [adt_example.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/examples/adt_example.py)
+ 
+ [api_usage.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/examples/api_usage.py)
+ 
+ [libraries_examples.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/examples/libraries_examples.py)
  
  
  More information about program structure and process of its realisation you can find on the project's wiki.
