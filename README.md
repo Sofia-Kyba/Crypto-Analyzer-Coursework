@@ -144,8 +144,6 @@ After writing crypto currency you will receive line graph with price change duri
 
 ![](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/usage_examples/price_change_answer.png)
 
-## Contributing
-
 ## Credit
 
 * Kyba Sofia, Ukrainian Catholic University, 2020
