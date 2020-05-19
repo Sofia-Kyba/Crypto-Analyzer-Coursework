@@ -113,7 +113,7 @@ To run the program you need to install:
 
 Main page with information about current top-5 cryptocurrencies and side-bar menu:
 
-![](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/usage_examples/main_page.png)
+![](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/usage_examples/main_page2.png)
 
 After following 'Emergence Frequency' you will see page with diagram that shows percentage of adding crypto currencies in certain year:
 
