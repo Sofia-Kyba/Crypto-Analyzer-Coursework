@@ -230,7 +230,7 @@ class Company:
                     return True
                 return False
             else:
-                return
+                return 
 
     def set_info(self, type_):
         """
