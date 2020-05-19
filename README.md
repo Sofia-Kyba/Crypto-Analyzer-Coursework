@@ -7,13 +7,13 @@ http://sofiakyba.pythonanywhere.com/
 
 * [Description](#Description)
 
-* [Input and Output data](#Input)
+* [Input and Output data](#Input-and-Output Data)
 
-* [Program structure and content](#Program)
+* [Program structure and content](#Program-structure-and-content)
 
 * [Installation](#Installation)
 
-* [Usage examples](#Usage)
+* [Usage examples](#Usage-examples)
 
 * [Contributing](#Contributing)
 
