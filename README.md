@@ -67,6 +67,12 @@ All the data was loaded with two kinds of API:
  
  [dynamic_array.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/modules/dynamic_array.py)
  
+ ### Modules for extracting data given with api
+ 
+ [crypto_api.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/api/crypto_api.py)
+ [company_api.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/api/company_api.py)
+ 
+ 
  ### Example modules
  
  [adt_example.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/examples/adt_example.py)
