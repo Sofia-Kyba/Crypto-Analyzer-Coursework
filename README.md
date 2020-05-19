@@ -5,6 +5,23 @@ http://sofiakyba.pythonanywhere.com/
 
 ## Table of contents
 
+-[Description](#Description)
+
+-[Input and Output data](#Input and Output data)
+
+-[Program structure and content](#Program structure and content)
+
+-[Installation](#Installation)
+
+-[Usage examples](#Usage examples)
+
+-[Contributing](#Contributing)
+
+-[Credit](#Credit)
+
+-[Licence](#Licence)
+
+
 
 ## Description
 
@@ -57,6 +74,8 @@ All the data was loaded with two kinds of API:
  [api_usage.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/examples/api_usage.py)
  
  [libraries_examples.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/examples/libraries_examples.py)
+ 
+ [diagrams](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/tree/master/diagrams)
  
  
  More information about program structure and process of its realisation you can find on the project's wiki.
