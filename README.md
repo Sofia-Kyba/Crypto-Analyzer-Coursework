@@ -123,7 +123,7 @@ After writing price and pressing buton you will be given a result:
 
 After following 'Existence vs Circulation' you will see comparison table of quantity of existing coins of each crypto currency and circulating ones:
 
-![](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/usage_examples/existence_circulation.png)
+![](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/usage_examples/existence_circulation2.png)
 
 After following 'Top mining companies' you will receive bar chart according to companies' rating and table with more detailed information about them: 
 
