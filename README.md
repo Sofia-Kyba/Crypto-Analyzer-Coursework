@@ -9,7 +9,8 @@ http://sofiakyba.pythonanywhere.com/
 ### Description
 
 The main aim of Crypto Analyzer Project is to explore tendency
-in crypto currency development and prevalence and make it easy to to get acquainted with crypto currencies, understand how to use them and why we need them.
+in crypto currency development and prevalence and make it easy to to get acquainted with crypto currencies,
+understand how to use them and why we need them.
 
 Due to web app user can:
 * explore frequency of crypto currency adding to system;
@@ -35,14 +36,19 @@ All the data was loaded with two kinds of API:
  ## Program structure and content
  
  #### Main modules
- Program can be run by module main.py. It consists of all functions that extract data, use CryptoInfo ADT object that provides needed calculations and builds  all graphs, charts and tables.
+ Program can be run by module **main.py**. It consists of all functions that extract data, use CryptoInfo ADT object that provides needed calculations and builds  all graphs, charts and tables.
  
- Module crypto_adt.py has realisation of CryptoInfo ADT. It consists of methods that help to contain data and make needed changes and calculations with it.
+ Module **crypto_adt.py** has realisation of CryptoInfo ADT. It consists of methods that help to contain data and make needed changes and calculations with it.
  
- Module dynamic_array.py consists of realisation of needed data structure - Dynamic Array.
+ Module **dynamic_array.py** consists of realisation of needed data structure - Dynamic Array.
  
  You can find them by links below:
  
+ [main.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/modules/main.py)
+ 
+ [crypto_adt.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/modules/crypto_adt.py)
+ 
+ [dynamic_array.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/modules/dynamic_array.py)
  
  #### Example modules
  
