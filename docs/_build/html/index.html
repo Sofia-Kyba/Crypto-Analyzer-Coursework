@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+
+<html lang="English">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Crypto Analyzer&#39;s documentation! &#8212; Crypto Analyzer 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-modules.main">
+<span id="welcome-to-crypto-analyzer-s-documentation"></span><h1>Welcome to Crypto Analyzer's documentation!<a class="headerlink" href="#module-modules.main" title="Permalink to this headline">¶</a></h1>
+<p>Module for main program of analysing crypto currencies</p>
+<dl class="py function">
+<dt id="modules.main.approx_price">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">approx_price</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.approx_price" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render page with form, where user
+can write needed price</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.main.approx_price_answer">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">approx_price_answer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.approx_price_answer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define all crypto currencies with closest
+price to needed one and render html
+page with results.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.main.checkInput">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">checkInput</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">userInput</span></em>, <em class="sig-param"><span class="n">kind_</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.checkInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check user's input.
+:param userInput: str
+:return: bool</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.main.emergence">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">emergence</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.emergence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define frequency of adding crypto currencies
+to system and render appropriate page
+with diagram and table.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.main.existence_circulation">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">existence_circulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.existence_circulation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define quantity of existing coins and
+circulating ones of all crypto currencies.
+Create dataFrame and render html page with it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.main.main_page">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">main_page</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.main_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render main page</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.main.mining_companies">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">mining_companies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.mining_companies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define top of companies and wallets and extract
+needed information with API. Build bar charts
+according to their rating and create dataFrame
+with general info. Render html page with results.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.main.price_change">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">price_change</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.price_change" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render page with form where user can write
+crypto currencies he wants to receive result of</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="modules.main.price_change_answer">
+<code class="sig-prename descclassname">modules.main.</code><code class="sig-name descname">price_change_answer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.main.price_change_answer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define changes in needed crypto currency
+price for last day and for last week.
+Build scatter chart with given result and
+render appropriate html page.</p>
+</dd></dl>
+
+<span class="target" id="module-modules.crypto_adt"></span><p>Module for creating adt based on Dynamic Array</p>
+<dl class="py class">
+<dt id="modules.crypto_adt.Company">
+<em class="property">class </em><code class="sig-prename descclassname">modules.crypto_adt.</code><code class="sig-name descname">Company</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Company" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for minimg company object representation</p>
+<dl class="py method">
+<dt id="modules.crypto_adt.Company.get_country">
+<code class="sig-name descname">get_country</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Company.get_country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return country of the company or wallet
+:return: str</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.Company.get_rate">
+<code class="sig-name descname">get_rate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Company.get_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return country of the company
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.Company.get_totalUsers">
+<code class="sig-name descname">get_totalUsers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Company.get_totalUsers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return quantity of users of the company or wallet
+:return: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.Company.isRecommended">
+<code class="sig-name descname">isRecommended</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Company.isRecommended" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define whether company is recommended.
+:return: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.Company.set_info">
+<code class="sig-name descname">set_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">type_</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Company.set_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set country of the company and its
+average rating.
+:return: NoneType</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="modules.crypto_adt.CryptoInfo">
+<em class="property">class </em><code class="sig-prename descclassname">modules.crypto_adt.</code><code class="sig-name descname">CryptoInfo</code><a class="headerlink" href="#modules.crypto_adt.CryptoInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for representation adt for needed
+information based on array</p>
+<dl class="py method">
+<dt id="modules.crypto_adt.CryptoInfo.approximatePrice">
+<code class="sig-name descname">approximatePrice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">price</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.CryptoInfo.approximatePrice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define cryptocurrencies with price that
+is approximate to needed and return list of them.
+:param price: float
+:return: list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.CryptoInfo.companies">
+<code class="sig-name descname">companies</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">companyData</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.CryptoInfo.companies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define top mining companies and wallets</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.CryptoInfo.define_frequency">
+<code class="sig-name descname">define_frequency</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.CryptoInfo.define_frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define frequency of adding
+cryptocurrencies to system.
+:return: list, list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.CryptoInfo.get_array">
+<code class="sig-name descname">get_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.CryptoInfo.get_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return array with names of all cryptocurrencies.
+:return: DynamicArray</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.CryptoInfo.get_circulation">
+<code class="sig-name descname">get_circulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.CryptoInfo.get_circulation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define how many coins of needed cryptocurrency
+are in circulation now and return list with numbers
+:return: list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.CryptoInfo.get_existence">
+<code class="sig-name descname">get_existence</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.CryptoInfo.get_existence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define how many coins of needed cryptocurrency
+exist now and return list with numbers
+:return: list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.CryptoInfo.price_change">
+<code class="sig-name descname">price_change</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.CryptoInfo.price_change" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define changes in price of needed cryptocurrency
+:param name:
+:return: list, list, list, list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.CryptoInfo.put_information">
+<code class="sig-name descname">put_information</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">crypto_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.CryptoInfo.put_information" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add all the information to allData array.
+Add all cryptocurrencies to cryptoArray.
+Add dates when cryptocurrencies were
+added to dates array.
+Add all dates to onlyDates list.
+:return: NoneType</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="modules.crypto_adt.Cryptocurrency">
+<em class="property">class </em><code class="sig-prename descclassname">modules.crypto_adt.</code><code class="sig-name descname">Cryptocurrency</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Cryptocurrency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for cryptocurrency representation</p>
+<dl class="py method">
+<dt id="modules.crypto_adt.Cryptocurrency.get_circulation_num">
+<code class="sig-name descname">get_circulation_num</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Cryptocurrency.get_circulation_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define and return number of coins in circulation.
+:return: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.Cryptocurrency.get_existence_num">
+<code class="sig-name descname">get_existence_num</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Cryptocurrency.get_existence_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define and return number of coins that exist at the moment.
+:return: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.crypto_adt.Cryptocurrency.get_price">
+<code class="sig-name descname">get_price</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">type_</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.crypto_adt.Cryptocurrency.get_price" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define and return price of the cryptocurrency.
+:return: int</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-modules.dynamic_array"></span><p>Module for representation of Dynamic array</p>
+<dl class="py class">
+<dt id="modules.dynamic_array.DynamicArray">
+<em class="property">class </em><code class="sig-prename descclassname">modules.dynamic_array.</code><code class="sig-name descname">DynamicArray</code><a class="headerlink" href="#modules.dynamic_array.DynamicArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dynamic array class akin to a
+simplified Python list.</p>
+<dl class="py method">
+<dt id="modules.dynamic_array.DynamicArray.append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.dynamic_array.DynamicArray.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>(DynamicArray, object) -&gt; NoneType
+Add object to end of the array.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dynamic_array.DynamicArray.insert">
+<code class="sig-name descname">insert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.dynamic_array.DynamicArray.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>(DynamicArray, int, int) -&gt; NoneType
+Insert value at index k, shifting
+subsequent values rightward.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="modules.dynamic_array.DynamicArray.remove">
+<code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.dynamic_array.DynamicArray.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>(DynamicArray, int) -&gt; NoneType
+Remove first occurrence of value(
+or  raise ValueError).</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-api.crypto_api"></span><dl class="py function">
+<dt id="api.crypto_api.get_information">
+<code class="sig-prename descclassname">api.crypto_api.</code><code class="sig-name descname">get_information</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.crypto_api.get_information" title="Permalink to this definition">¶</a></dt>
+<dd><p>(NoneType) -&gt;
+Get information using api and write into the file.</p>
+</dd></dl>
+
+<span class="target" id="module-api.company_api"></span><dl class="py function">
+<dt id="api.company_api.get_information">
+<code class="sig-prename descclassname">api.company_api.</code><code class="sig-name descname">get_information</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.company_api.get_information" title="Permalink to this definition">¶</a></dt>
+<dd><p>(NoneType) -&gt;
+Get information using api and write into the file.</p>
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Crypto Analyzer</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Sofia.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
