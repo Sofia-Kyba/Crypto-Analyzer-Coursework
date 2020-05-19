@@ -127,7 +127,7 @@ After following 'Approximate Price' you will have an opportunity to write price 
 
 ![](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/usage_examples/approximate_price.png)
 
-After writing price and pressing buton you will be given a result:
+After writing price and pressing button you will be given a result:
 
 ![](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/usage_examples/approximate_price_answer.png)
 
