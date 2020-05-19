@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png"
+     href="https://www.bitgild.com/wp-content/uploads/2020/01/1-oz-maple-leaf-gold-coin-2020-2.png">
+</head>
+<style>
+    body
+    {
+      background-image: url("https://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80");
+    }
+    .sidebar-sticky
+    {
+        font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 24px;
+        background: darkslategrey;
+        width: 300px;
+        height: 10250px;
+        padding-top: 25px;
+        opacity: 0.9;
+        filter: blur(0px);
+        float: left;
+    }
+    a
+    {
+        color: antiquewhite;
+    }
+    .nav-item
+    {
+        padding-top: 25px;
+    }
+    ._button
+    {
+        padding-left: 10px;
+        border: none;
+        background: darkslategrey;
+        font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 29px;
+        color: antiquewhite;
+        text-align: left;
+    }
+    .big-bar
+    {
+        padding-top: 16px;
+        top: 60px;
+        align-content: center;
+        width: 920px;
+        height: 10250px;
+        background: mintcream;
+        font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 23px;
+        float: left;
+        margin-left: 110px;
+        opacity: 0.9;
+    }
+    .action_button
+    {
+        padding-top: 3px;
+        padding-left: 32px;
+        border: none;
+        background: #1c2f2f;
+        font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 29px;
+        color: antiquewhite;
+        text-align: left;
+    }
+    .nav-item_current
+    {
+        padding-left: 0px;
+        background: #1c2f2f;
+        height: 85px;
+    }
+    .title
+    {
+        font-family: HelveticaNeueLT-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: darkslategrey;
+        font-size: 30px;
+        margin-top: 13px;
+        font-style: revert;
+        padding-bottom: 20px;
+        padding-left: 66px;
+        width: 850px;
+        align-items: center;
+    }
+    .table_
+    {
+      font-size: 18px;
+    }
+
+</style>
+
+<body>
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+              <form class="form" method="post" action="/crypto_info">
+                  <button class="_button" type="submit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                      Crypto info
+                  </button>
+              </form>
+          </li>
+          <li class="nav-item">
+              <form class="form" method="post" action="/emergence">
+                 <button class="_button" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                    Emergence frequency
+                 </button>
+              </form>
+          </li>
+          <li class="nav-item">
+              <form class="form" method="post" action="/approximate_price">
+                  <button class="_button" type="submit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                      Approximate price
+                  </button>
+              </form>
+          </li>
+          <li class="nav-item_current">
+              <form class="form" method="post" action="/exist_circulate">
+                  <button class="action_button" type="submit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                      Existence vs Сirculation
+                  </button>
+              </form>
+          </li>
+          <li class="nav-item">
+              <form class="form" method="post" action="/mining_companies">
+                  <button class="_button" type="submit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                      Top mining companies
+                  </button>
+            </form>
+          </li>
+            <li class="nav-item">
+                <form class="form" method="post" action="/price_change">
+                    <button class="_button" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        Price change
+                    </button>
+                </form>
+          </li>
+        </ul>
+    </div>
+    <div class="big-bar">
+        <div class="table_">
+          <h1 align="center" class="title">COMPARISON TABLE OF EXISTING AND CIRCULATING COINS OF EACH CRYPTOCURRENCY</h1>
+          <table border="1" class="dataframe table table-striped">
+          <thead>
+            <tr style="text-align: center;">
+              <th></th>
+              <th>Existence</th>
+              <th>Circulation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr align="center">
+              <th>Bitcoin</th>
+              <td>18375843</td>
+              <td>18375843</td>
+            </tr>
+            <tr align="center">
+              <th>Ethereum</th>
+              <td>1.10899e+08</td>
+              <td>1.10899e+08</td>
+            </tr>
+            <tr align="center">
+              <th>XRP</th>
+              <td>99990976125</td>
+              <td>44112853111</td>
+            </tr>
+            <tr align="center">
+              <th>Tether</th>
+              <td>6.99832e+09</td>
+              <td>6.36103e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Bitcoin Cash</th>
+              <td>1.84052e+07</td>
+              <td>1.84052e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Bitcoin SV</th>
+              <td>1.84038e+07</td>
+              <td>1.84038e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Litecoin</th>
+              <td>6.47139e+07</td>
+              <td>6.47139e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Binance Coin</th>
+              <td>187536713</td>
+              <td>155536713</td>
+            </tr>
+            <tr align="center">
+              <th>EOS</th>
+              <td>1.01927e+09</td>
+              <td>9.22567e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Tezos</th>
+              <td>7.1018e+08</td>
+              <td>7.1018e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Stellar</th>
+              <td>5.00018e+10</td>
+              <td>2.02325e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Cardano</th>
+              <td>31112483745</td>
+              <td>25927070538</td>
+            </tr>
+            <tr align="center">
+              <th>Chainlink</th>
+              <td>1000000000</td>
+              <td>350000000</td>
+            </tr>
+            <tr align="center">
+              <th>UNUS SED LEO</th>
+              <td>9.99499e+08</td>
+              <td>9.99499e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Crypto.com Coin</th>
+              <td>1e+11</td>
+              <td>1.66032e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Monero</th>
+              <td>1.75576e+07</td>
+              <td>1.75576e+07</td>
+            </tr>
+            <tr align="center">
+              <th>TRON</th>
+              <td>9.92813e+10</td>
+              <td>6.66821e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Huobi Token</th>
+              <td>5e+08</td>
+              <td>2.22668e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Ethereum Classic</th>
+              <td>116313299</td>
+              <td>116313299</td>
+            </tr>
+            <tr align="center">
+              <th>Neo</th>
+              <td>100000000</td>
+              <td>70538831</td>
+            </tr>
+            <tr align="center">
+              <th>USD Coin</th>
+              <td>7.12942e+08</td>
+              <td>7.06239e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Dash</th>
+              <td>9.48951e+06</td>
+              <td>9.48951e+06</td>
+            </tr>
+            <tr align="center">
+              <th>HedgeTrade</th>
+              <td>1e+09</td>
+              <td>2.88209e+08</td>
+            </tr>
+            <tr align="center">
+              <th>IOTA</th>
+              <td>2779530283</td>
+              <td>2779530283</td>
+            </tr>
+            <tr align="center">
+              <th>Cosmos</th>
+              <td>2.37928e+08</td>
+              <td>1.90688e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Zcash</th>
+              <td>9140275</td>
+              <td>9140275</td>
+            </tr>
+            <tr align="center">
+              <th>NEM</th>
+              <td>8999999999</td>
+              <td>8999999999</td>
+            </tr>
+            <tr align="center">
+              <th>Maker</th>
+              <td>1.00558e+06</td>
+              <td>1.00558e+06</td>
+            </tr>
+            <tr align="center">
+              <th>Dogecoin</th>
+              <td>1.2453e+11</td>
+              <td>1.2453e+11</td>
+            </tr>
+            <tr align="center">
+              <th>Ontology</th>
+              <td>1000000000</td>
+              <td>656746573</td>
+            </tr>
+            <tr align="center">
+              <th>Basic Attention Token</th>
+              <td>1.5e+09</td>
+              <td>1.45753e+09</td>
+            </tr>
+            <tr align="center">
+              <th>OKB</th>
+              <td>300000000</td>
+              <td>60000000</td>
+            </tr>
+            <tr align="center">
+              <th>DigiByte</th>
+              <td>1.31297e+10</td>
+              <td>1.31297e+10</td>
+            </tr>
+            <tr align="center">
+              <th>FTX Token</th>
+              <td>3.46141e+08</td>
+              <td>9.52688e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Paxos Standard</th>
+              <td>2.49952e+08</td>
+              <td>2.44952e+08</td>
+            </tr>
+            <tr align="center">
+              <th>0x</th>
+              <td>1e+09</td>
+              <td>6.52985e+08</td>
+            </tr>
+            <tr align="center">
+              <th>VeChain</th>
+              <td>86712634466</td>
+              <td>55454734800</td>
+            </tr>
+            <tr align="center">
+              <th>Binance USD</th>
+              <td>1.78041e+08</td>
+              <td>1.78041e+08</td>
+            </tr>
+            <tr align="center">
+              <th>THETA</th>
+              <td>1000000000</td>
+              <td>870502690</td>
+            </tr>
+            <tr align="center">
+              <th>Bitcoin Gold</th>
+              <td>1.75139e+07</td>
+              <td>1.75139e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Decred</th>
+              <td>1.14789e+07</td>
+              <td>1.14789e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Hedera Hashgraph</th>
+              <td>50000000000</td>
+              <td>4077684788</td>
+            </tr>
+            <tr align="center">
+              <th>Augur</th>
+              <td>11000000</td>
+              <td>11000000</td>
+            </tr>
+            <tr align="center">
+              <th>Synthetix Network Token</th>
+              <td>1.82701e+08</td>
+              <td>1.81455e+08</td>
+            </tr>
+            <tr align="center">
+              <th>ICON</th>
+              <td>8.0046e+08</td>
+              <td>5.42723e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Qtum</th>
+              <td>1.02408e+08</td>
+              <td>9.66889e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Algorand</th>
+              <td>3.23875e+09</td>
+              <td>7.07482e+08</td>
+            </tr>
+            <tr align="center">
+              <th>TrueUSD</th>
+              <td>1.37381e+08</td>
+              <td>1.37381e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Enjin Coin</th>
+              <td>1e+09</td>
+              <td>8.19772e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Lisk</th>
+              <td>1.39619e+08</td>
+              <td>1.23564e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Hyperion</th>
+              <td>1e+10</td>
+              <td>3.16766e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Ravencoin</th>
+              <td>6144145000</td>
+              <td>6144145000</td>
+            </tr>
+            <tr align="center">
+              <th>Kyber Network</th>
+              <td>2.10861e+08</td>
+              <td>1.80028e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Status</th>
+              <td>6804870174</td>
+              <td>3470483788</td>
+            </tr>
+            <tr align="center">
+              <th>Multi-collateral DAI</th>
+              <td>1.08514e+08</td>
+              <td>1.08229e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Waves</th>
+              <td>101911732</td>
+              <td>101911732</td>
+            </tr>
+            <tr align="center">
+              <th>ZB Token</th>
+              <td>2100000000</td>
+              <td>463288810</td>
+            </tr>
+            <tr align="center">
+              <th>Bitcoin Diamond</th>
+              <td>1.89493e+08</td>
+              <td>1.86493e+08</td>
+            </tr>
+            <tr align="center">
+              <th>OmiseGO</th>
+              <td>1.40245e+08</td>
+              <td>1.40245e+08</td>
+            </tr>
+            <tr align="center">
+              <th>ABBC Coin</th>
+              <td>1.00328e+09</td>
+              <td>5.55417e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Hive</th>
+              <td>3.71631e+08</td>
+              <td>2.88261e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Energi</th>
+              <td>2.8823e+07</td>
+              <td>2.8823e+07</td>
+            </tr>
+            <tr align="center">
+              <th>MonaCoin</th>
+              <td>6.57297e+07</td>
+              <td>6.57297e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Flexacoin</th>
+              <td>27647916667</td>
+              <td>27647916667</td>
+            </tr>
+            <tr align="center">
+              <th>MCO</th>
+              <td>3.15877e+07</td>
+              <td>1.57938e+07</td>
+            </tr>
+            <tr align="center">
+              <th>DxChain Token</th>
+              <td>1e+11</td>
+              <td>5e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Nano</th>
+              <td>1.33248e+08</td>
+              <td>1.33248e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Holo</th>
+              <td>1.77619e+11</td>
+              <td>1.64092e+11</td>
+            </tr>
+            <tr align="center">
+              <th>Siacoin</th>
+              <td>41817047634</td>
+              <td>41817047634</td>
+            </tr>
+            <tr align="center">
+              <th>KuCoin Shares</th>
+              <td>171250284</td>
+              <td>81250284</td>
+            </tr>
+            <tr align="center">
+              <th>Zilliqa</th>
+              <td>1.34139e+10</td>
+              <td>1.01224e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Aave</th>
+              <td>1.3e+09</td>
+              <td>1.3e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Nervos Network</th>
+              <td>2.7382e+10</td>
+              <td>1.72335e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Numeraire</th>
+              <td>1.09875e+07</td>
+              <td>2.42889e+06</td>
+            </tr>
+            <tr align="center">
+              <th>Ren</th>
+              <td>1e+09</td>
+              <td>8.52453e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Komodo</th>
+              <td>1.19771e+08</td>
+              <td>1.19771e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Bytom</th>
+              <td>1407000000</td>
+              <td>1002499275</td>
+            </tr>
+            <tr align="center">
+              <th>Steem</th>
+              <td>3.89854e+08</td>
+              <td>3.7288e+08</td>
+            </tr>
+            <tr align="center">
+              <th>ReddCoin</th>
+              <td>2.88087e+10</td>
+              <td>2.88087e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Nexo</th>
+              <td>1000000000</td>
+              <td>560000011</td>
+            </tr>
+            <tr align="center">
+              <th>Quant</th>
+              <td>1.46125e+07</td>
+              <td>1.20727e+07</td>
+            </tr>
+            <tr align="center">
+              <th>BitTorrent</th>
+              <td>990000000000</td>
+              <td>212116500000</td>
+            </tr>
+            <tr align="center">
+              <th>Matic Network</th>
+              <td>10000000000</td>
+              <td>3433504398</td>
+            </tr>
+            <tr align="center">
+              <th>Crypterium</th>
+              <td>9.95696e+07</td>
+              <td>9.95696e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Terra</th>
+              <td>9.95859e+08</td>
+              <td>2.87766e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Verge</th>
+              <td>1.62645e+10</td>
+              <td>1.62645e+10</td>
+            </tr>
+            <tr align="center">
+              <th>BHEX Token</th>
+              <td>1.4464e+09</td>
+              <td>2.84348e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Seele-N</th>
+              <td>1e+09</td>
+              <td>6.99592e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Streamr</th>
+              <td>9.87155e+08</td>
+              <td>6.67327e+08</td>
+            </tr>
+            <tr align="center">
+              <th>BitShares</th>
+              <td>2747460000</td>
+              <td>2747460000</td>
+            </tr>
+            <tr align="center">
+              <th>Horizen</th>
+              <td>9.05019e+06</td>
+              <td>9.05019e+06</td>
+            </tr>
+            <tr align="center">
+              <th>Decentraland</th>
+              <td>2.19791e+09</td>
+              <td>1.37016e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Bytecoin</th>
+              <td>1.84067e+11</td>
+              <td>1.84067e+11</td>
+            </tr>
+            <tr align="center">
+              <th>Unibright</th>
+              <td>1.5e+08</td>
+              <td>1.48595e+08</td>
+            </tr>
+            <tr align="center">
+              <th>v.systems</th>
+              <td>3906080466</td>
+              <td>1991222002</td>
+            </tr>
+            <tr align="center">
+              <th>HyperCash</th>
+              <td>4.4609e+07</td>
+              <td>4.4609e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Ripio Credit Network</th>
+              <td>9.99943e+08</td>
+              <td>5.07848e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Electroneum</th>
+              <td>1.00961e+10</td>
+              <td>1.00961e+10</td>
+            </tr>
+            <tr align="center">
+              <th>PAX Gold</th>
+              <td>25497.1</td>
+              <td>25497.1</td>
+            </tr>
+            <tr align="center">
+              <th>Blockstack</th>
+              <td>6.7238e+08</td>
+              <td>4.38456e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Golem</th>
+              <td>1000000000</td>
+              <td>980050000</td>
+            </tr>
+            <tr align="center">
+              <th>MaidSafeCoin</th>
+              <td>452552412</td>
+              <td>452552412</td>
+            </tr>
+            <tr align="center">
+              <th>Aragon</th>
+              <td>3.96095e+07</td>
+              <td>3.2101e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Chiliz</th>
+              <td>8888888888</td>
+              <td>4567138626</td>
+            </tr>
+            <tr align="center">
+              <th>IOST</th>
+              <td>2.1e+10</td>
+              <td>1.2014e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Zcoin</th>
+              <td>2.14e+07</td>
+              <td>1.00964e+07</td>
+            </tr>
+            <tr align="center">
+              <th>WAX</th>
+              <td>3.6538e+09</td>
+              <td>1.14208e+09</td>
+            </tr>
+            <tr align="center">
+              <th>RSK Infrastructure Framework</th>
+              <td>1e+09</td>
+              <td>6.0194e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Ardor</th>
+              <td>998999495</td>
+              <td>998999495</td>
+            </tr>
+            <tr align="center">
+              <th>Stratis</th>
+              <td>9.97953e+07</td>
+              <td>9.97953e+07</td>
+            </tr>
+            <tr align="center">
+              <th>CyberVein</th>
+              <td>2.14748e+09</td>
+              <td>1.0604e+09</td>
+            </tr>
+            <tr align="center">
+              <th>SOLVE</th>
+              <td>1e+09</td>
+              <td>3.40459e+08</td>
+            </tr>
+            <tr align="center">
+              <th>aelf</th>
+              <td>8.8e+08</td>
+              <td>5.4448e+08</td>
+            </tr>
+            <tr align="center">
+              <th>STASIS EURO</th>
+              <td>31979207</td>
+              <td>31979207</td>
+            </tr>
+            <tr align="center">
+              <th>Loopring</th>
+              <td>1.37481e+09</td>
+              <td>1.05236e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Insolar</th>
+              <td>1000000000</td>
+              <td>40000000</td>
+            </tr>
+            <tr align="center">
+              <th>Aion</th>
+              <td>420047526</td>
+              <td>420047526</td>
+            </tr>
+            <tr align="center">
+              <th>Digitex Futures</th>
+              <td>1000000000</td>
+              <td>820850000</td>
+            </tr>
+            <tr align="center">
+              <th>Swipe</th>
+              <td>2.9997e+08</td>
+              <td>6.59828e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Power Ledger</th>
+              <td>9.99785e+08</td>
+              <td>4.30021e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Aeternity</th>
+              <td>3.55693e+08</td>
+              <td>3.09872e+08</td>
+            </tr>
+            <tr align="center">
+              <th>GXChain</th>
+              <td>9.98981e+07</td>
+              <td>6.5e+07</td>
+            </tr>
+            <tr align="center">
+              <th>WaykiChain</th>
+              <td>210000000</td>
+              <td>189000000</td>
+            </tr>
+            <tr align="center">
+              <th>Gatechain Token</th>
+              <td>3e+08</td>
+              <td>6.31461e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Celsius</th>
+              <td>6.95658e+08</td>
+              <td>2.38864e+08</td>
+            </tr>
+            <tr align="center">
+              <th>iExec RLC</th>
+              <td>8.69998e+07</td>
+              <td>8.00708e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Pundi X</th>
+              <td>2.58585e+11</td>
+              <td>2.34578e+11</td>
+            </tr>
+            <tr align="center">
+              <th>Thunder Token</th>
+              <td>1e+10</td>
+              <td>5.45384e+09</td>
+            </tr>
+            <tr align="center">
+              <th>TomoChain</th>
+              <td>100000000</td>
+              <td>70641875</td>
+            </tr>
+            <tr align="center">
+              <th>Huobi Pool Token</th>
+              <td>9.85706e+09</td>
+              <td>5.00396e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Elastos</th>
+              <td>3.61336e+07</td>
+              <td>1.8418e+07</td>
+            </tr>
+            <tr align="center">
+              <th>MX Token</th>
+              <td>6.69838e+08</td>
+              <td>1.89152e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Wirex Token</th>
+              <td>1e+10</td>
+              <td>2.3005e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Ark</th>
+              <td>1.49355e+08</td>
+              <td>1.20754e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Tierion</th>
+              <td>1e+09</td>
+              <td>4.28481e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Super Zero</th>
+              <td>644650802</td>
+              <td>263038135</td>
+            </tr>
+            <tr align="center">
+              <th>Nash Exchange</th>
+              <td>5e+07</td>
+              <td>2.34426e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Project Pai</th>
+              <td>1672942500</td>
+              <td>1464436718</td>
+            </tr>
+            <tr align="center">
+              <th>Ocean Protocol</th>
+              <td>6.13099e+08</td>
+              <td>3.50126e+08</td>
+            </tr>
+            <tr align="center">
+              <th>TrueChain</th>
+              <td>1e+08</td>
+              <td>7.95755e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Aidos Kuneen</th>
+              <td>25000000</td>
+              <td>25000000</td>
+            </tr>
+            <tr align="center">
+              <th>Band Protocol</th>
+              <td>1e+08</td>
+              <td>2.0394e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Gnosis</th>
+              <td>10000000</td>
+              <td>1104590</td>
+            </tr>
+            <tr align="center">
+              <th>Divi</th>
+              <td>1.67082e+09</td>
+              <td>1.67082e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Cortex</th>
+              <td>2.99792e+08</td>
+              <td>2.49939e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Orbs</th>
+              <td>1e+10</td>
+              <td>2.13719e+09</td>
+            </tr>
+            <tr align="center">
+              <th>NULS</th>
+              <td>1.09173e+08</td>
+              <td>9.70957e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Reserve Rights</th>
+              <td>1e+11</td>
+              <td>6.85e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Grin</th>
+              <td>41562480</td>
+              <td>41562480</td>
+            </tr>
+            <tr align="center">
+              <th>Loki</th>
+              <td>47783896</td>
+              <td>47783896</td>
+            </tr>
+            <tr align="center">
+              <th>BORA</th>
+              <td>1205750000</td>
+              <td>671112500</td>
+            </tr>
+            <tr align="center">
+              <th>Metal</th>
+              <td>6.65889e+07</td>
+              <td>6.54838e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Waltonchain</th>
+              <td>7e+07</td>
+              <td>6.96508e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Wanchain</th>
+              <td>2.1e+08</td>
+              <td>1.239e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Acute Angle Cloud</th>
+              <td>1000000000</td>
+              <td>250000000</td>
+            </tr>
+            <tr align="center">
+              <th>Beam</th>
+              <td>61702440</td>
+              <td>61702440</td>
+            </tr>
+            <tr align="center">
+              <th>Kava</th>
+              <td>1.08878e+08</td>
+              <td>3.60889e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Tachyon Protocol</th>
+              <td>1e+09</td>
+              <td>2.66859e+08</td>
+            </tr>
+            <tr align="center">
+              <th>SwissBorg</th>
+              <td>1e+09</td>
+              <td>7.04254e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Elrond</th>
+              <td>1.95e+10</td>
+              <td>9.86637e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Kusama</th>
+              <td>9.05508e+06</td>
+              <td>2.70876e+06</td>
+            </tr>
+            <tr align="center">
+              <th>FunFair</th>
+              <td>1.09999e+10</td>
+              <td>6.54888e+09</td>
+            </tr>
+            <tr align="center">
+              <th>Ignis</th>
+              <td>999449694</td>
+              <td>761143950</td>
+            </tr>
+            <tr align="center">
+              <th>THORChain</th>
+              <td>5e+08</td>
+              <td>1.58432e+08</td>
+            </tr>
+            <tr align="center">
+              <th>LBRY Credits</th>
+              <td>6.68041e+08</td>
+              <td>3.60288e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Dragonchain</th>
+              <td>433494437</td>
+              <td>238421940</td>
+            </tr>
+            <tr align="center">
+              <th>Factom</th>
+              <td>9.06811e+06</td>
+              <td>9.06811e+06</td>
+            </tr>
+            <tr align="center">
+              <th>BHPCoin</th>
+              <td>5.28813e+07</td>
+              <td>2.01776e+07</td>
+            </tr>
+            <tr align="center">
+              <th>ILCoin</th>
+              <td>1.41266e+09</td>
+              <td>4.58962e+08</td>
+            </tr>
+            <tr align="center">
+              <th>PIVX</th>
+              <td>5.67812e+07</td>
+              <td>5.67812e+07</td>
+            </tr>
+            <tr align="center">
+              <th>WINk</th>
+              <td>999000000000</td>
+              <td>196500113934</td>
+            </tr>
+            <tr align="center">
+              <th>ZBG Token</th>
+              <td>5e+08</td>
+              <td>2.79449e+08</td>
+            </tr>
+            <tr align="center">
+              <th>WazirX</th>
+              <td>1e+09</td>
+              <td>1.07405e+08</td>
+            </tr>
+            <tr align="center">
+              <th>BitKan</th>
+              <td>1e+10</td>
+              <td>6.30832e+09</td>
+            </tr>
+            <tr align="center">
+              <th>IoTeX</th>
+              <td>10000000000</td>
+              <td>5399999890</td>
+            </tr>
+            <tr align="center">
+              <th>Vertcoin</th>
+              <td>54711547</td>
+              <td>54711547</td>
+            </tr>
+            <tr align="center">
+              <th>Telcoin</th>
+              <td>1e+11</td>
+              <td>4.72458e+10</td>
+            </tr>
+            <tr align="center">
+              <th>Propy</th>
+              <td>100000000</td>
+              <td>70100406</td>
+            </tr>
+            <tr align="center">
+              <th>Civic</th>
+              <td>1000000000</td>
+              <td>670000000</td>
+            </tr>
+            <tr align="center">
+              <th>Populous</th>
+              <td>5.32522e+07</td>
+              <td>5.32522e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Storj</th>
+              <td>4.25e+08</td>
+              <td>1.35787e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Syscoin</th>
+              <td>5.86207e+08</td>
+              <td>5.86207e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Nebulas</th>
+              <td>7.1353e+07</td>
+              <td>5.19526e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Loom Network</th>
+              <td>1e+09</td>
+              <td>9.70094e+08</td>
+            </tr>
+            <tr align="center">
+              <th>Eidoo</th>
+              <td>8.82215e+07</td>
+              <td>7.1887e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Bancor</th>
+              <td>6.91486e+07</td>
+              <td>6.91486e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Enigma</th>
+              <td>1.5e+08</td>
+              <td>7.48362e+07</td>
+            </tr>
+            <tr align="center">
+              <th>DAD</th>
+              <td>1e+09</td>
+              <td>6.6453e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Orchid</th>
+              <td>1e+09</td>
+              <td>6.58073e+07</td>
+            </tr>
+            <tr align="center">
+              <th>Fetch.ai</th>
+              <td>1.153e+09</td>
+              <td>7.1776e+08</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+    </div>
+
+</body>
+</html>
