@@ -1,12 +1,12 @@
-### Project name: Crypto Analyzer
+## Project name: Crypto Analyzer
 
 Check it out:
 http://sofiakyba.pythonanywhere.com/
 
-### Table of contents
+## Table of contents
 
 
-### Description
+## Description
 
 The main aim of Crypto Analyzer Project is to explore tendency
 in crypto currency development and prevalence and make it easy to to get acquainted with crypto currencies,
@@ -21,13 +21,13 @@ Due to web app user can:
 
 All information is represented by graphs, charts and tables.
 
-### Input and Output data
+## Input and Output data
 
 All the data was loaded with two kinds of API:
 
- * General information about crypto currencies: https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest
- * Information about companies: 
- https://min-api.cryptocompare.com/data/recommended/all
+ [General information about crypto currencies](https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest)
+ 
+ [Information about companies](https://min-api.cryptocompare.com/data/recommended/all)
  
  Besides two researches provide user an opportunity to write data he needs.
  
@@ -35,7 +35,7 @@ All the data was loaded with two kinds of API:
  
  ## Program structure and content
  
- #### Main modules
+ ### Main modules
  Program can be run by module **main.py**. It consists of all functions that extract data, use CryptoInfo ADT object that provides needed calculations and builds  all graphs, charts and tables.
  
  Module **crypto_adt.py** has realisation of CryptoInfo ADT. It consists of methods that help to contain data and make needed changes and calculations with it.
@@ -50,7 +50,7 @@ All the data was loaded with two kinds of API:
  
  [dynamic_array.py](https://github.com/Sofia-Kyba/Semester_Homework_Ucu/blob/master/modules/dynamic_array.py)
  
- #### Example modules
+ ### Example modules
  
  
  
@@ -58,7 +58,7 @@ All the data was loaded with two kinds of API:
  
  
 
-### Installation
+## Installation
 
 To run the program you need to install:
 
@@ -70,13 +70,13 @@ To run the program you need to install:
 
 `pip install plotly`
 
-### Usage examples
+## Usage examples
 
-### Contributing
+## Contributing
 
-### Credit
+## Credit
 
 * Kyba Sofia, Ukrainian Catholic University, 2020
 
-### Licence
+## Licence
 
