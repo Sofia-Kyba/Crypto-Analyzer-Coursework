@@ -152,3 +152,4 @@ After writing crypto currency you will receive line graph with price change duri
 
 ## Licence
 
+Licensed under the [MIT License](LICENSE)
