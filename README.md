@@ -3,9 +3,6 @@
 Check it out:
 http://sofiakyba.pythonanywhere.com/
 
-Video preview:
-https://youtu.be/m5JbNhOk808
-
 ## Table of contents
 
 * [Description](#Description)
